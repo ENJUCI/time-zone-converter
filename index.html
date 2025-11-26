@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Zone Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Time Zone Converter</h1>
+
+        <label>Your Time:</label>
+        <input type="datetime-local" id="userTime" />
+
+        <label>Your Time Zone:</label>
+        <select id="fromZone">
+            <option value="Africa/Lagos">Africa/Lagos (WAT)</option>
+            <option value="Europe/London">Europe/London (GMT)</option>
+            <option value="America/New_York">America/New_York (EST)</option>
+            <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+        </select>
+
+        <label>Convert To:</label>
+        <select id="toZone">
+            <option value="Europe/London">Europe/London (GMT)</option>
+            <option value="America/New_York">America/New_York (EST)</option>
+            <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+            <option value="Africa/Lagos">Africa/Lagos (WAT)</option>
+        </select>
+
+        <button onclick="convertTime()">Convert</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
