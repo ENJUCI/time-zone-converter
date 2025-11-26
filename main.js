@@ -9,10 +9,10 @@ function convertTime() {
         return;
     }
 
-    // Convert user input to a Date object in their selected timezone
+
     const date = new Date(inputTime);
 
-    // Format the date in the target timezone
+
     const converted = date.toLocaleString("en-US", {
         timeZone: toZone,
         hour12: false
